@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Community Survey Form</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body class="body">
+		<header class="header">
+			<h1 id="title">Community Survey Form</h1>
+			<p id="description">
+				We appreciate your participation in community. Plase take the survey &
+				leave a remark below to help with future improvement.
+			</p>
+		</header>
+
+		<form class="form" id="survey-form">
+			<div class="form_group">
+				<label class="form-label" id="name-label" for="name">Name</label>
+				<input
+					class="form-input"
+					type="text"
+					id="name"
+					placeholder="Enter your name"
+					required
+				/>
+			</div>
+
+			<div class="form_group">
+				<label class="form-label" id="email-label">Email</label>
+				<input
+					class="form-input"
+					type="email"
+					id="email"
+					placeholder="Enter your email"
+					required
+				/>
+			</div>
+
+			<div class="form_group">
+				<label class="form-label" id="number-label">Age (Optional)</label>
+				<input
+					class="form-input"
+					type="number"
+					id="number"
+					placeholder="16+"
+					min="16"
+					max="99"
+					required
+				/>
+			</div>
+
+			<div class="form_group">
+				<label class="form-label" id="number-label"
+					>Which option your best</label
+				>
+				<select class="form-input" id="dropdown">
+					<option value="" id="dropdown">1</option>
+					<option value="" id="dropdown">2</option>
+					<option value="" id="dropdown">3</option>
+					<option value="" id="dropdown">4</option>
+					<option value="" id="dropdown">5</option>
+					<option value="" id="dropdown">6</option>
+					<option value="" id="dropdown">7</option>
+					<option value="" id="dropdown">8</option>
+					<option value="" id="dropdown">9</option>
+					<option value="" id="dropdown">10</option>
+				</select>
+			</div>
+
+			<div class="form_group">
+				<label class="form-label" for=""
+					>Would you recommend our Community?</label
+				>
+
+				<input type="radio" name="radio" value="1" checked id="yes" />
+				<label for="yes">Yes</label>
+				<br />
+				<input type="radio" name="radio" value="0" id="no" />
+				<label for="no">No</label>
+			</div>
+
+			<div class="form_group">
+				<label class="form-label" for=""
+					>What would you like to see improved?</label
+				>
+
+				<input type="checkbox" id="survey-form" name="" value="opensource" />
+				<label for="opensource">Open Source Community</label>
+
+				<br />
+
+				<input type="checkbox" id="survey-form" name="" value="fandom" />
+				<label for="fandom">Fandom</label>
+
+				<br />
+
+				<input type="checkbox" id="survey-form" name="" value="forum" />
+				<label for="forum">Forum</label>
+			</div>
+
+			<div class="form_group">
+				<label class="form-label" for="">Any comments or suggestions?</label>
+				<textarea
+					class="form-input textarea"
+					placeholder="Enter your comments or suggestions here..."
+				></textarea>
+			</div>
+
+			<div class="form_group">
+				<button type="submit" id="submit">Submit</button>
+			</div>
+		</form>
+	</body>
+</html>
